@@ -1,8 +1,4 @@
-let videos = [
-    {
 
-    }
-]
 
 class VideoRepository {
     constructor(id, title, imageUrl, ){

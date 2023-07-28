@@ -7,7 +7,7 @@ const videoSchema = new mongoose.Schema({
     year: {
         type: String,
         required: true,
-    },
+    }
 });
 
-module.exports = mongoose.model('Video', videoSchema);
+module.exports = mongoose.model('videos', videoSchema);
