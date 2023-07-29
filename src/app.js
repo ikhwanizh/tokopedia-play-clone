@@ -12,6 +12,6 @@ app.use('/api', apiRoutes);
 
 //TODO: setup customer routes
 const routes = require('./routes/routes');
-apiRoutes.use('/videos',routes);
+apiRoutes.use('/',routes);
 
 module.exports = app;

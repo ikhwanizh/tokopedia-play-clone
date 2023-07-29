@@ -1,13 +1,15 @@
 const mongoose = require('mongoose');
 const videoSchema = new mongoose.Schema({
-    title: {
-        type: String,
+    id: {
+        type: Number,
         required: true,
+        unique: true
     },
-    year: {
+    imageUrl: {
         type: String,
         required: true,
-    }
+        unique: true
+    },
 });
 
 module.exports = mongoose.model('videos', videoSchema);
