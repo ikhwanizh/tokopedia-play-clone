@@ -1,6 +1,6 @@
 # tokopedia-play-clone
 
-#Database Structure
+# Database Structure
 * Videos
 {
   id: Number,
@@ -23,8 +23,8 @@
 }
 
 
-#API Structure
-#GET /videos
+# API Structure
+# GET /videos
 Returns All Videos
 - URL Params
   None
