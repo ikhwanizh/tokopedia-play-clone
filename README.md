@@ -1,6 +1,6 @@
 # tokopedia-play-clone
 
-# Database Structure
+#Database Structure
 * Videos
 {
   id: Number,
@@ -23,4 +23,15 @@
 }
 
 
-# API Structure
+#API Structure
+#GET /videos
+Returns All Videos
+- URL Params
+  None
+- Data Params
+  None
+- Headers
+  Content-Type: application/json
+- Success Response:
+  Code: 200
+  Content:
