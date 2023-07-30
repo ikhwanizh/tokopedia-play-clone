@@ -10,6 +10,15 @@ class CommentService {
             console.log(err);
         }
     }
+    static async getCommentsByVideoId(videoId) {
+        try {
+            const comments = await CommentModel.find({videoId});
+            return comments;
+        }
+        catch (err) {
+            console.log(err);
+        }
+    }
     static async addComment(username, comment,videoId) {
         const timestamp = generateTimestamp();
         console.log(timestamp);

@@ -10,17 +10,20 @@ class VideoService {
             console.log(err);
         }
     }
-    // static async addVideo(image) {
-    //     try {
-    //         const video = new VideoModel({ id, imageUrl });
-    //         const newVideo = await video.save();
-    //         console.log('Video saved successfully!');
-    //         return newVideo;
-    //     }
-    //     catch (err) {
-    //         console.log(err);
-    //     }
-    // }
+    static async addVideo(imageUrl) {
+        const id = generateId();
+        try {
+            const newVideo = await VideoModel.create({id, imageUrl});
+            console.log('Video saved successfully!');
+            return newVideo;
+        }
+        catch (err) {
+            console.log(err);
+        }
+    }
+}
+function generateId() {
+    return Math.floor(Math.random() * 1000000);
 }
 
 module.exports = VideoService;

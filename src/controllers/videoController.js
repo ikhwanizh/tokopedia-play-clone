@@ -10,6 +10,16 @@ class VideoController {
             res.status(500).json(err);
         }
     }
+    static async addVideo(req, res) {
+        const { imageUrl } = req.body;
+        try {
+            const newVideo = await VideoService.addVideo(imageUrl);
+            res.status(200).json(newVideo);
+        }
+        catch (err) {
+            res.status(500).json(err);
+        }
+    }
 }
 
 module.exports = VideoController;

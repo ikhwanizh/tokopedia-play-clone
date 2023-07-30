@@ -5,16 +5,19 @@ const productSchema = new mongoose.Schema({
         required: true,
         unique: true
     },
-    productUrl: {
+    productLink: {
         type: String,
         required: true,
-        unique: true
     },
     title: {
         type: String,
         required: true,
     },
     price: {
+        type: Number,
+        required: true,
+    },
+    videoId: {
         type: Number,
         required: true,
     }
