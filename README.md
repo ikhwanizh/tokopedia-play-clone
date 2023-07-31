@@ -1,14 +1,14 @@
 # tokopedia-play-clone
 
 # Database Structure
-* Videos
+* Video Object
 ```
 {
   id: Number,
   imageUrl: String
 }
 ```
-* Pruducts
+* Pruduct Object
 ```
 {
   id: Number,
@@ -18,7 +18,7 @@
   videoId: Number
 }
 ```
-* Comments
+* Comment Object
 ```
 {
   username: String,
@@ -43,8 +43,8 @@ Returns All Videos
 ```
 {
   videos: [
-            {<videos_object>},
-            {<videos_object>}
+            {<video_object>},
+            {<video_object>}
           ]
 }
 ```
@@ -55,9 +55,9 @@ Creates a new Video and returns the new object.
   None
 - Data Params
 ```
- {
+{
     imageUrl: string,
-  }
+}
 ```
 - Headers
   Content-Type: application/json
@@ -65,5 +65,40 @@ Creates a new Video and returns the new object.
   Code: 200
   Content:
 ```
-{<videos_object>}
+{<video_object>}
+```
+
+# GET /products
+Returns All Product
+- URL Params
+  None
+- Data Params
+  None
+- Headers
+  Content-Type: application/json
+- Success Response:
+  Code: 200
+  Content:
+```
+{
+  products: [
+            {<product_object>},
+            {<product_object>}
+          ]
+}
+```
+
+# GET /products/:videoId
+Returns product by Video Id
+- URL Params
+  *Required:* `id=[integer]`
+- Data Params
+  None
+- Headers
+  Content-Type: application/json
+- Success Response:
+  Code: 200
+  Content:
+```
+{<product_object>}
 ```
