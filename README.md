@@ -180,3 +180,9 @@ Creates a new Comment and returns the new object.
 ```
 {<comment_object>}
 ```
+
+# How to Run!
+1. Open Terminal
+2. git clone "https://github.com/ikhwanizh/tokopedia-play-clone/edit/development"
+3. type "npm init" at terminal
+4. type "npm run dev" to run app
