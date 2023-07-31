@@ -29,6 +29,7 @@
 ```
 
 # API Structure
+- Base Url Local: 127.0.0.1:8080/api
 # GET /videos
 Returns All Videos
 - URL Params
