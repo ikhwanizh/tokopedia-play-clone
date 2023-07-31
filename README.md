@@ -102,3 +102,47 @@ Returns product by Video Id
 ```
 {<product_object>}
 ```
+
+# POST /products
+Creates a new Product and returns the new object.
+- URL Params
+  None
+- Data Params
+```
+{
+    title: string,
+    price: number,
+    productLink: string,
+    videoId:number
+}
+```
+- Headers
+  Content-Type: application/json
+- Success Response:
+  Code: 200
+  Content:
+```
+{<product_object>}
+```
+
+# GET /comments
+Returns All Comment
+- URL Params
+  None
+- Data Params
+  None
+- Headers
+  Content-Type: application/json
+- Success Response:
+  Code: 200
+  Content:
+```
+{
+  comments: [
+            {<comment_object>},
+            {<comment_object>}
+          ]
+}
+```
+
+#
