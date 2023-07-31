@@ -40,3 +40,30 @@ Returns All Videos
 - Success Response:
   Code: 200
   Content:
+```
+{
+  videos: [
+            {<videos_object>},
+            {<videos_object>}
+          ]
+}
+```
+
+# POST /videos:
+Creates a new Video and returns the new object.
+- URL Params
+  None
+- Data Params
+```
+ {
+    imageUrl: string,
+  }
+```
+- Headers
+  Content-Type: application/json
+- Success Response:
+  Code: 200
+  Content:
+```
+{<videos_object>}
+```
