@@ -91,7 +91,7 @@ Returns All Product
 # GET /products/:videoId
 Returns product by Video Id
 - URL Params
-  *Required:* `id=[integer]`
+  *Required:* `id=[number]`
 - Data Params
   None
 - Headers
@@ -145,4 +145,38 @@ Returns All Comment
 }
 ```
 
-#
+# GET /comments/:videoId
+Returns comment by Video Id
+- URL Params
+  *Required:* `id=[number]`
+- Data Params
+  None
+- Headers
+  Content-Type: application/json
+- Success Response:
+  Code: 200
+  Content:
+```
+{<comment_object>}
+```
+
+# POST /comments
+Creates a new Comment and returns the new object.
+- URL Params
+  None
+- Data Params
+```
+{
+    username: string,
+    comment: string,
+    videoId: number
+}
+```
+- Headers
+  Content-Type: application/json
+- Success Response:
+  Code: 200
+  Content:
+```
+{<comment_object>}
+```
